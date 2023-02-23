@@ -53,26 +53,3 @@ btn1.onclick = () =>{
 }
 
 
-
-
-
-
-
-
-
-
-// btn1.onclick = () => {
-//     c1.push(inPut1.value)
-//     inPut1.value = ' '
-//     console.log(c1)
-//     for(let i of c1){
-//         console.log(i)
-//     }
-//     let out1 = ' '
-//     for( let i = 0; c1.length > i; i ++){
-//         out1 += c1[i]
-//         document.querySelector('.out1').innerHTML = out1
-//     }    
-// }
-
-
