@@ -1,6 +1,5 @@
 //Первое задание
-let b = [1,2,3]
-let a = new Set(b)
+let a = new Set()
 a.add('e'), 
 a.add('r'), 
 a.add('i'), 
@@ -29,25 +28,20 @@ btn.onclick = () => {
         document.querySelector('.out').innerHTML = out
     }
 }
-// Третье задание не могу сделать  
-let inPut1 = document.querySelector('.text1')
-let btn1 = document.querySelector('.btn1')
-
-let arr =[7, 8, 9]
-btn1.onclick = () => {
-    arr.push(inPut1.value)
-    inPut1.value = ' '
-    console.log(arr)
-    let out1 = ' '
-    for( let i = 0; arr.length > i; i ++){
-        out1 += arr[i] + ' '
-        document.querySelector('.out1').innerHTML = out1
-        // if (out1.indexOf(inPut1.value)) {
-        //     console.log(true)
-        // }else{
-        //     console.log(false)
-        // }
-    }
+//Третье задание  
+let btn1 = document.querySelector('.btn1');
+let inputText = document.querySelector('.text1');
+btn1.onclick = function () {
+    let userValue = inputText.value;
+    document.querySelector('.out1').innerHTML = `${checkValue(userValue)}`;
+    function checkValue(value) {
+        for (let b of a) {
+            if (b === value) {
+                return true;
+            }
+                return false;
+        }
+    }console.log(b)
 }
 
 //Четвертое задание
@@ -65,3 +59,4 @@ btn2.onclick = () =>{
     console.log(num1)
     document.querySelector('.out3').innerHTML += num1 + ' '
 }
+
