@@ -31,18 +31,14 @@ btn.onclick = () => {
 //Третье задание  
 let btn1 = document.querySelector('.btn1');
 let inputText = document.querySelector('.text1');
+
+
 btn1.onclick = function () {
-    let userValue = inputText.value;
-    document.querySelector('.out1').innerHTML = `${checkValue(userValue)}`;
-    function checkValue(value) {
-        for (let b of a) {
-            if (b === value) {
-                return true;
-            }
-                return false;
-        }
-    }console.log(b)
+    let set1 = new Set(inputText.value);
+    let isContain = set1.has('a');
+    document.querySelector('.out1').innerHTML = isContain ? 'true' : 'false';console.log(isContain)
 }
+
 
 //Четвертое задание
 let btn2 = document.querySelector('.btn2')
